@@ -19,29 +19,39 @@
         <!-- <div style="background-color:rgb(67, 87, 186); width:1.5px" class=" md:absolute md:top-72 md:left-40 md:h-dvh"></div> -->
 
         <!-- navbar starts here -->
-        <div class=" flex flex-wrap justify-between items-center" id="navbar">
+        <div class=" md:flex md:flex-wrap md:justify-between md:items-center flex justify-between " id="navbar">
             <div>
-                <h1 class="text-4xl font-bold mx-4 text-white flex">
-                    <span class="text-slate-600">&#60</span> anish <span class="text-slate-600">/></span>
+                <h1 class="text-4xl font-bold text-white ">
+                    <span class="text-slate-600 ">&#60</span> anish <span class="text-slate-600">/></span>
                 </h1>
             </div>
-            <ul class=" hidden md:flex ">
-                <li
-                    class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500 ">
-                    <a href="">Home</a> <span class="text-slate-600">/></span></li>
-                <li class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500"><a href="#about">about</a> <span
-                        class="text-slate-600">/></span></li>
-                <li class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500""><a href="">project</a> <span
-                        class="text-slate-600">/></span>
+            <ul class=" hidden bg-[#100E17] shadow-2xl shadow-[#100E17] md:bg-transparent md:flex md:flex-wrap md:static  absolute top-0 right-0 pl-14 pr-14 md:p-0 space-y-10 md:space-y-0 "
+                id="menubar">
+                <li class="mx-4 pt-10 md:pt-0 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:text-cyan-500 shadow-lg hover:shadow-cyan-500/50"
+                    id="home">
+                    <a href="#home">Home</a> <span class="text-slate-600">/></span>
                 </li>
-                <li class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500""><a href="">blogs</a> <span
-                        class="text-slate-600">/></span></li>
-                <li class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-500""><a href="#contact">contact</a> <span
-                        class="text-slate-600">/></span>
+                <li
+                    class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-cyan-500 shadow-lg hover:shadow-cyan-500/50">
+                    <a href="#about">about</a> <span class="text-slate-600">/></span>
+                </li>
+                <li
+                    class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-cyan-500 shadow-lg hover:shadow-cyan-500/50">
+                    <a href="#project">project</a> <span class=" text-slate-600">/></span>
+                </li>
+                <li class="mx-4 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-cyan-500 shadow-lg hover:shadow-cyan-500/50"
+                    id="blogs">
+                    <a href="">blogs</a> <span class=" text-slate-600">/></span>
+                </li>
+                <li
+                    class="mx-4 pb-10 md:pb-0 font-semibold text-white text-xl flex transition ase-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-cyan-500 shadow-lg hover:shadow-cyan-500/50">
+                    <a href="
+                    #contact">contact</a> <span class="text-slate-600">/></span>
                 </li>
             </ul>
-            <div class="text-white font-bold text-4xl md:hidden mx-2">&#8801</div>
+            <div class="text-white font-bold text-4xl z-10 md:hidden pr-4" id="menubutton">&#8801</div>
         </div>
+
         <!-- navbar ends here -->
 
 
@@ -62,9 +72,52 @@
     <!-- header ends here -->
 
 
+
+    <!-- projects section starts here  -->
+    <div class="bg-[#191426] text-white " id="project">
+        <div class=" ml-10 pt-10">
+
+            <div class="md:ml-40">
+                <h6 class="text-slate-600 md:text-xl">Projects <span>/></span></h6>
+                <br>
+            </div>
+
+            <div class="pt-10 ">
+                <!-- left project slide -->
+                <div class="flex md:justify-start md:ml-36 p-5" id="Netflix">
+                    <div
+                        class="  static h-64 md:w-5/12 w-11/12  hover:origin-bottom hover:rotate-12 hover:skew-x-12 duration-300 ">
+                        <div><a target="_blank" href="https://github.com/anish1108/Netflix_Clone"><img
+                                    class="md:h-64 h-52 md:w-full w-full opacity-60 " src="images/Netflix.png" alt=""
+                                    srcset=""></a></div>
+                        <div class="relative bottom-40 -left-10 text-2xl font-black">Netflix <br> Clone <br>
+                            <div class="h-0.5 w-32 bg-white mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right project slide -->
+                <div class="flex md:justify-end md:pr-40 p-5">
+                    <div
+                        class="  static h-64 md:w-5/12 w-11/12 hover:origin-bottom hover:rotate-12 hover:skew-x-12 duration-300 ">
+                        <div><a target="_blank" href="https://github.com/anish1108/BMICalculator"><img
+                                    class="md:h-64 h-52 w-full opacity-75" src="images/bmicalci.png" alt=""
+                                    srcset=""></a></div>
+                        <div class="relative bottom-40 -left-10 text-2xl font-black">BMI <br> Calculator <br>
+                            <div class="h-0.5 w-32 bg-white mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- projects section ends here  -->
+
+
     <!-- about section starts here -->
-    <div style="background-image: url(images/home.jpg);" class=" bg-[#14121c] text-white text-sm md:text-xl font-['Roboto']"
-        id="about">
+    <div style="background-image: url(images/home.jpg);"
+        class=" bg-[#14121c] text-white text-sm md:text-xl font-['Roboto']" id="about">
         <div class=" ml-10 pt-10">
             <div>
                 <div class="md:ml-40">
@@ -140,7 +193,6 @@
 
 
     <!-- contact starts here  -->
-
     <div class=" bg-[#14121c] text-white  " id="contact">
         <div class="ml-10 pt-10">
             <div class="md:ml-40">
@@ -149,18 +201,25 @@
             </div>
             <div class="md:ml-40 text-xl ">Find me on</div>
 
-            <div class=" md:ml-40 md:grid md:grid-rows-1 md:grid-flow-col md:mr-60 text-blue-500 text-2xl  ">
+            <div class="  md:ml-40 md:grid md:grid-rows-2 md:grid-flow-col md:mr-60 text-blue-500 text-2xl">
 
-                <div><span><i class="fa-brands fa-linkedin"></i></span><a
-                        href="https://www.linkedin.com/in/anishkumar11/"> linkedin</a></div>
-                <div><span><i class="fa-brands fa-github"></i></span><a href="https://github.com/anish1108"> Github</a>
+                <div><span class=" hover:text-cyan-500 shadow-2xl hover:shadow-cyan-500/50"><i
+                            class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/anishkumar11/">
+                            linkedin</a></span></div>
+
+                <div><span class=" hover:text-cyan-500 shadow-2xl hover:shadow-cyan-500/50"><i
+                            class="fa-brands fa-github"></i><a href="https://github.com/anish1108"> Github</a></span>
                 </div>
-                <div><span><i class="fa-brands fa-x-twitter"></i></span><a href="https://twitter.com/Anish1131085">
-                        Twitter</a></div>
-                <div><span><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/_anish11_/">
-                        Instagram</a></div>
-                <div class="pb-10"><span><i class="fa-solid fa-at"></i></span><a href=""> anishprasad2512@gmail.com</a>
-                </div>
+
+                <div><span class=" hover:text-cyan-500 shadow-2xl hover:shadow-cyan-500/50"><i
+                            class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/Anish1131085">
+                            Twitter</a></span></div>
+
+                <div class="pb-10"><span class=" hover:text-cyan-500 shadow-2xl hover:shadow-cyan-500/50"><i
+                            class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/_anish11_/">
+                            Instagram</a></span></div>
+                <!-- <div class="pb-10"><span><i class="fa-solid fa-at"></i></span><a href=""> anishprasad2512@gmail.com</a> -->
+                <!-- </div> -->
 
 
             </div>
@@ -173,10 +232,32 @@
 
 
     </div>
-
     <!-- contact ends here  -->
 
 
+
+
+
+
+    <!-- JavaScript code  -->
+    <script>
+        let menubar = document.querySelector("#menubar");
+        let menubutton = document.querySelector("#menubutton");
+        let blogs = document.querySelector("#blogs")
+       
+
+        menubutton.addEventListener('click', function () {
+            menubar.classList.toggle('hidden')
+        })
+
+        blogs.addEventListener('click', function (e) {
+            alert("Yet to be released")
+        })
+
+       
+
+      
+    </script>
 
 </body>
 
