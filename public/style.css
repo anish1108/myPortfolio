@@ -651,20 +651,20 @@ video {
   width: 100%;
 }
 
-@keyframes fade-right {
+@keyframes fade-down {
   0% {
     opacity: 0;
-    transform: translateX(-2rem);
+    transform: translateY(-2rem);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-.animate-fade-right {
-  animation: fade-right 1s both;
+.animate-fade-down {
+  animation: fade-down 1s both;
 }
 
 @keyframes fade-left {
@@ -683,20 +683,20 @@ video {
   animation: fade-left 1s both;
 }
 
-@keyframes fade-down {
+@keyframes fade-right {
   0% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateX(-2rem);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.animate-fade-down {
-  animation: fade-down 1s both;
+.animate-fade-right {
+  animation: fade-right 1s both;
 }
 
 .flex-col {
@@ -743,6 +743,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'images\/home\.jpg\'\)\] {
+  background-image: url('images/home.jpg');
 }
 
 .p-5 {
@@ -917,16 +921,8 @@ video {
   animation-duration: 3000ms;
 }
 
-.animate-duration-\[4000ms\] {
-  animation-duration: 4000ms;
-}
-
 .animate-once {
   animation-iteration-count: 1;
-}
-
-.animate-thrice {
-  animation-iteration-count: 3;
 }
 
 .animate-ease-in-out {
@@ -956,52 +952,6 @@ video {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-.hover\:animate-wiggle:hover {
-  animation: wiggle 1s both;
-}
-
-@keyframes flip-down {
-  0% {
-    transform: rotateX(-90deg);
-    transform-origin: top;
-  }
-
-  100% {
-    transform: rotateX(0);
-    transform-origin: top;
-  }
-}
-
-.hover\:animate-flip-down:hover {
-  animation: flip-down 1s both;
-}
-
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    transform: translateX(-2rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.hover\:animate-fade-right:hover {
-  animation: fade-right 1s both;
 }
 
 .hover\:text-cyan-500:hover {
